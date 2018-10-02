@@ -189,5 +189,5 @@ app.get('/*',function(req,res){
     res.render('404',{});
 });
 app.listen(server_port, server_ip_address,function(){
-	console.log("Server Started");
+	console.log("Server Started Successfully");
 });
