@@ -26,7 +26,7 @@ var ObjectID = require('mongodb').ObjectID;
 var users = require('./user_schema.js');
 var notes = require('./note_schema.js');
 
-var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 
